@@ -1,0 +1,121 @@
+
+            <!-- made by Emilee Chen
+                    july 2020
+                        @ emileechen.com
+                            emilee.ty.chen@gmail.com -->
+
+
+
+
+
+<!-- 
+    https://www.w3.org/TR/SVG/paths.html
+https://medium.com/@francoisromain/smooth-a-svg-path-with-cubic-bezier-curves-e37b49d46c74
+ -->
+<html>
+
+    <head>      
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+
+        <svg width="260px" height="600px" viewBox="0 0 260 600"
+             version="1.1" xmlns="http://www.w3.org/2000/svg"
+             xmlns:xlink="http://www.w3.org/1999/xlink">
+
+            <mask id="cup">
+                <path class="tea" transform="translate(0, 200)"
+                        d=" M 0 20,
+                            q 75 -20, 130 0
+                            q 75 20, 130 0
+                            l 0 400
+                            l -260 0" />
+            </mask>
+
+            <polygon class="cup" points="10 170 250 170 230 600 30 600"></polygon>
+            <polygon class="tea" points="10 170 250 170 230 600 30 600" mask="url(#cup)"></polygon>
+
+            <g class="toppings" transform="translate(60, 500)">
+                <circle cx="0" cy="0" r="18"></circle>
+            </g>
+
+            <rect class="lid" fill="#3B3B3B" x="0" y="150" width="260" height="12"></rect>
+            <polygon class="straw" transform="translate(112, 32)" points="0 0 36 0 36 525 0 540"></polygon>
+
+        </svg>
+
+
+        <svg width="260px" height="600px" viewBox="0 0 260 600"
+             version="1.1" xmlns="http://www.w3.org/2000/svg"
+             xmlns:xlink="http://www.w3.org/1999/xlink">
+
+            <mask id="cup">
+                <path class="tea" transform="translate(0, 200)"
+                        d=" M 0 20,
+                            q 75 -20, 130 0
+                            q 75 20, 130 0
+                            l 0 400
+                            l -260 0" />
+            </mask>
+
+            <polygon class="tea" points="10 170 250 170 230 600 30 600" mask="url(#cup)"></polygon>
+
+        </svg>
+
+
+        <svg width="260px" height="600px" viewBox="0 0 260 600"
+             version="1.1" xmlns="http://www.w3.org/2000/svg"
+             xmlns:xlink="http://www.w3.org/1999/xlink">
+
+            <polygon class="cup" points="10 170 250 170 230 600 30 600"></polygon>
+
+            <path class="tea" transform="translate(0, 200)"
+                    d=" M 0 20,
+                        q 75 -20, 130 0
+                        q 75 20, 130 0
+                        l 0 400
+                        l -260 0" />
+
+            <g class="toppings" transform="translate(60, 500)">
+                <circle cx="0" cy="0" r="18"></circle>
+            </g>
+
+            <rect class="lid" fill="#3B3B3B" x="0" y="150" width="260" height="12"></rect>
+            <polygon class="straw" transform="translate(112, 32)" points="0 0 36 0 36 525 0 540"></polygon>
+            
+        </svg>
+
+
+        <svg width="260px" height="571px" viewBox="0 0 260 571"
+             version="1.1" xmlns="http://www.w3.org/2000/svg"
+             xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="Artboard" transform="translate(-520.000000, -90.000000)">
+                    <g id="simple2" transform="translate(520.000000, 90.000000)">
+                        <polygon id="cup" fill="#F4E7D8" points="11 171 251 171 231 571 31 571"></polygon>
+                        <path d="M81,244 C143.833333,244 144,271 217,271 C228.347138,271 237.85799,270.347635 246.092153,269.245712 L231,571 L31,571 L15.350617,258.002927 L20.3677593,255.930887 C35.5227936,249.74251 52.02262,244 81,244 Z" id="tea" fill="#F0D4B5"></path>
+                        <rect id="lid" fill="#3B3B3B" x="0" y="151" width="260" height="12"></rect>
+                        <polygon id="straw" fill="#3B3B3B" transform="translate(124.979227, 271.370018) scale(-1, 1) rotate(-6.000000) translate(-124.979227, -271.370018) " points="106.979227 1.37001797 142.979227 1.37001797 142.979227 541.370018 106.979227 527.330018"></polygon>
+                        <g id="bubbles" transform="translate(47.000000, 452.000000)" fill="#3B3B3B">
+                            <circle id="Oval" cx="40" cy="54" r="18"></circle>
+                            <circle id="Oval" cx="84" cy="54" r="18"></circle>
+                            <circle id="Oval" cx="128" cy="54" r="18"></circle>
+                            <circle id="Oval" cx="18" cy="18" r="18"></circle>
+                            <circle id="Oval" cx="62" cy="18" r="18"></circle>
+                            <circle id="Oval" cx="106" cy="18" r="18"></circle>
+                            <circle id="Oval" cx="150" cy="18" r="18"></circle>
+                            <circle id="Oval" cx="18" cy="90" r="18"></circle>
+                            <circle id="Oval" cx="62" cy="90" r="18"></circle>
+                            <circle id="Oval" cx="106" cy="90" r="18"></circle>
+                            <circle id="Oval" cx="150" cy="90" r="18"></circle>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </svg>
+                
+    </body>
+
+
+</html>

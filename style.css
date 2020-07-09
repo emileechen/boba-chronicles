@@ -1,0 +1,39 @@
+.cup {
+    fill: #F4E7D8;
+}
+.tea {
+    fill: #F0D4B5;
+}
+.lid {
+    fill: #3B3B3B;
+}
+.straw {
+    fill: #3B3B3B;
+}
+.toppings {
+    fill: #3B3B3B;
+}
+
+.red {
+    fill: red;
+}
+
+.blue {
+    fill: blue;
+}
+
+
+
+
+.straw:hover {
+    animation: 1s 3 stir;
+    animation-timing-function: ease-in, linear, ease-out;
+}
+@keyframes stir {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(20deg);
+    }
+}
