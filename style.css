@@ -24,16 +24,38 @@
 
 
 
-
-.straw:hover {
-    animation: 1s 3 stir;
+.straww {
+    transform: translate(112px, 32px);
+    transform-origin: 130px 156px;
+    animation: 1s infinite stir;
     animation-timing-function: ease-in, linear, ease-out;
 }
 @keyframes stir {
     0% {
-        transform: rotate(0deg);
+        transform: rotate(0deg) translate(112px, 32px);
+    }
+    25% {
+        transform: rotate(4deg) translate(112px, 32px);
+    }
+    50% {
+        transform: rotate(0deg) translate(112px, 32px);
+    }
+    75% {
+        transform: rotate(-4deg) translate(112px, 32px);
     }
     100% {
-        transform: rotate(20deg);
+        transform: rotate(0deg) translate(112px, 32px);
+    }
+}
+
+.teaaa:hover {
+    animation: shake 1s infinite ease-out;
+}
+@keyframes shake {
+    0% {
+        transform: translate(0px, 200px);
+    }
+    100% {
+        transform: translate(-900px, 200px);
     }
 }

@@ -11,6 +11,7 @@
 <!-- 
     https://www.w3.org/TR/SVG/paths.html
 https://medium.com/@francoisromain/smooth-a-svg-path-with-cubic-bezier-curves-e37b49d46c74
+https://stackoverflow.com/questions/39605420/repeat-an-animation-2-or-3-times-before-easing-it-out
  -->
 <html>
 
@@ -19,6 +20,175 @@ https://medium.com/@francoisromain/smooth-a-svg-path-with-cubic-bezier-curves-e3
     </head>
 
     <body>
+
+
+        <svg width="260px" height="600px" viewBox="0 0 260 600"
+             version="1.1" xmlns="http://www.w3.org/2000/svg"
+             xmlns:xlink="http://www.w3.org/1999/xlink">
+
+            <mask id="cupp">
+                <path class="tea" transform="translate(0, 200)"
+                        d=" M            0  20,
+                            Q  65   0, 130  20
+                            Q 205  40, 260  20
+                            Q 325   0, 390  20
+                            Q 465  40, 520  20
+                            L          520 440
+                            L            0 440" >
+                    <animateTransform attributeName="transform"
+                        type="translate"
+                        from="0 200"
+                        to="-260 200"
+                        dur="2s"
+                        repeatCount="indefinite"
+                    />
+                </path>
+            </mask>
+
+            <polygon class="cup" points="10 170 250 170 230 600 30 600"></polygon>
+            <polygon class="tea" points="10 170 250 170 230 600 30 600" mask="url(#cupp)"></polygon>
+
+            <g class="toppings" transform="translate(60, 500)">
+                <circle cx="0" cy="0" r="18"></circle>
+            </g>
+
+            <rect class="lid" fill="#3B3B3B" x="0" y="150" width="260" height="12"></rect>
+            <polygon class="straw straww" points="0 0 36 0 36 525 0 540"></polygon>
+
+        </svg>
+
+
+        <svg width="260px" height="600px" viewBox="0 0 260 600"
+             version="1.1" xmlns="http://www.w3.org/2000/svg"
+             xmlns:xlink="http://www.w3.org/1999/xlink">
+
+            <mask id="cupp">
+                <path class="tea" transform="translate(0, 200)"
+                        d=" M            0  20,
+                            Q  65   0, 130  20
+                            Q 205  40, 260  20
+                            Q 325   0, 390  20
+                            Q 465  40, 520  20
+                            L          520 440
+                            L            0 440" >
+                    <animateTransform attributeName="transform"
+                        type="translate"
+                        from="0 200"
+                        to="-260 200"
+                        dur="2s"
+                        repeatCount="indefinite"
+                    />
+                </path>
+            </mask>
+
+            <polygon class="cup" points="10 170 250 170 230 600 30 600"></polygon>
+            <polygon class="tea" points="10 170 250 170 230 600 30 600" mask="url(#cupp)"></polygon>
+
+            <g class="toppings" transform="translate(60, 500)">
+                <circle cx="0" cy="0" r="18"></circle>
+            </g>
+
+            <rect class="lid" fill="#3B3B3B" x="0" y="150" width="260" height="12"></rect>
+            <polygon class="straw" transform="translate(112, 32)" points="0 0 36 0 36 525 0 540"></polygon>
+
+        </svg>
+
+
+        <svg width="200px" height="600px" viewBox="0 0 200 600"
+             version="1.1" xmlns="http://www.w3.org/2000/svg"
+             xmlns:xlink="http://www.w3.org/1999/xlink">
+
+            <path class="tea teaaa" transform="translate(0, 200)"
+                    d=" M            0  20
+                        Q 100  20, 200  20
+                        Q 250  15, 300  20
+                        Q 350  30, 400  20
+                        Q 450   0, 500  20
+                        Q 550  40, 600  20
+                        Q 650   0, 700  20
+                        Q 750  30, 800  20
+                        Q 850  15, 900  20
+                        Q 900  20, 1100  20
+                        L          1100 440
+                        L            0 440" />
+        </svg>
+
+
+        <svg width="780px" height="600px" viewBox="0 0 780 600"
+             version="1.1" xmlns="http://www.w3.org/2000/svg"
+             xmlns:xlink="http://www.w3.org/1999/xlink">
+
+            <path class="tea" transform="translate(0, 200)"
+                    d=" M            0  20
+                        Q 130  20, 260  20
+                        Q 325  15, 390  20
+                        Q 465  30, 520  20
+                        Q 585  0, 650  20
+                        Q 715  40, 780  20
+                        L          780 440
+                        L            0 440" />
+        </svg>
+
+
+        <svg width="260px" height="600px" viewBox="0 0 260 600"
+             version="1.1" xmlns="http://www.w3.org/2000/svg"
+             xmlns:xlink="http://www.w3.org/1999/xlink">
+
+            <path class="tea" transform="translate(0, 200)"
+                    d=" M            0  20,
+                        Q  65   0, 130  20
+                        Q 205  40, 260  20
+                        Q 325   0, 390  20
+                        Q 465  40, 520  20
+                        L          520 440
+                        L            0 440" >
+                <animateTransform attributeName="transform"
+                    type="translate"
+                    from="0 200"
+                    to="-260 200"
+                    dur="2s"
+                    repeatCount="indefinite"
+                />
+            </path>
+        </svg>
+
+
+        <svg width="390px" height="600px" viewBox="0 0 390 600"
+             version="1.1" xmlns="http://www.w3.org/2000/svg"
+             xmlns:xlink="http://www.w3.org/1999/xlink">
+
+            <path class="tea" transform="translate(0, 200)"
+                    d=" M            0  20,
+                        Q  65   0, 130  20
+                        Q 205  40, 260  20
+                        Q 325   0, 390  20
+                        L          390 440
+                        L            0 440" >
+            </path>
+        </svg>
+
+
+        <svg width="260px" height="600px" viewBox="0 0 260 600"
+             version="1.1" xmlns="http://www.w3.org/2000/svg"
+             xmlns:xlink="http://www.w3.org/1999/xlink">
+
+            <path class="tea" transform="translate(0, 200)"
+                    d="M 0 20,
+                       q 65 -20, 130 0
+                       q 65 20, 130 0
+                       l 0 400
+                       l -260 0" />
+                <animate repeatCount="indefinite" attributeName="d" dur="1s"
+                        values="M 0 20,
+                                q 65 20, 130 0
+                                q 65 -20, 130 0
+                                l 0 400
+                                l -260 0">
+                </animate>
+            </path>
+
+        </svg>
+
 
         <svg width="260px" height="600px" viewBox="0 0 260 600"
              version="1.1" xmlns="http://www.w3.org/2000/svg"
