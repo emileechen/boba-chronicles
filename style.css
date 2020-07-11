@@ -10,18 +10,13 @@
 .straw {
     fill: #3B3B3B;
 }
+.ice {
+    fill: #B5D3E7;
+    fill-opacity: .7;
+}
 .toppings {
     fill: #3B3B3B;
 }
-
-.red {
-    fill: red;
-}
-
-.blue {
-    fill: blue;
-}
-
 
 
 .straww {
